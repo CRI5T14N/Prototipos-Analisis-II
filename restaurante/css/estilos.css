@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../img/login.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 1300px;
+    margin: auto;
+    background: #eeea;
+}
+
+.hotel {
+    background: #000;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+.hotel a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hotel i {
+    color: #fff;
+}
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav {
+    background: #eeec;
+    width: 1300px;
+}
+
+.nav__ul {
+    text-align: center;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #000;
+}
+
+.nav__li:hover > a {
+    color: #333;
+}
+
+.nav__li:hover {
+    color: #333;
+}
+
+.nav__li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav__li i {
+    width: 40px;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 8px;
+}
+
+.user-account {
+    color: #000;
+    position: relative;
+    right: 0;
+    font-size: 30px;
+}
+
+.nav__responsive-button-container {
+    position: fixed;
+    width: 100%;
+    background-color: #69c;
+    margin-top: -64px;
+    z-index: 100;
+}
+
+.nav__responsive-button {
+    font-size: 30px;
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    .nav__ul {
+        display: none;
+    }
+
+    .nav {
+        height: 42px;
+        width: 100%;
+    }
+
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 42px;
+        padding-top: 22px;
+        height: 42px;
+    }
+
+    .nav__li-container {
+        position: relative;
+        top: -2000px;
+        height: calc(100vh);
+        background-color: #9bf;
+        transition: all 0.6s;
+        z-index: 1;
+    }
+
+    .nav__responsive-li {
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .nav__responsive-li i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: #016;
+    }
+
+    .nav__responsive-li a {
+        color: #016;
+        text-decoration: none;
+    }
+    
+    .nav__responsive-ul:hover > .nav__li-container {
+        top: -22px;
+    }
+}
+
+.main-container {
+    width: 1300px;
+    margin: 40px auto 40px;
+    display: grid;
+    grid-template-columns: minmax(1000px, 1fr);
+    grid-template-rows: repeat(3, 450px);
+    grid-row-gap: 40px;
+    position: relative;
+}
+
+.simple-rooms-container {
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.simple-rooms-container__img {
+    width: 1150px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 390px;
+    text-align: center;
+    border-radius: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 15px;
+}
+
+.simple-rooms-container__img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.double-rooms-container {
+    width: 1150px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.double-rooms-container__img {
+    width: 1150px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 390px;
+    text-align: center;
+    border-radius: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 15px;
+}
+
+.double-rooms-container__img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+.triple-rooms-container {
+    width: 1150px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.triple-rooms-container__img {
+    width: 1150px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 390px;
+    text-align: center;
+    border-radius: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 15px;
+}
+
+.triple-rooms-container__img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+.seccion-title {
+    position: absolute;
+    width: 1120px;
+    text-align: center;
+    margin-bottom: 10px;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: #ccc;
+    background: #333;
+}
+
+.footer-container {
+    margin: auto;
+    text-align: center;
+    background: #000;
+    padding: 40px;
+    color: #fff;
+}
+
+.footer-container h3 {
+    font-size: 35px;
+}
+
+.footer-container li {
+    display: inline-block;
+    padding: 40px 90px 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer-container li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container li i {
+    margin-right: 10px;
+}
+
